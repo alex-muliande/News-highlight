@@ -2,10 +2,10 @@
   {% for result in news_results %}
     <div class="col-md-4 mt-3">
       <div class="card">
-        <div class="card-header text-center bg-dark text-white">
+        <div class="card-header text-center">
           <a id="read" class="header" href="/news/{{result.id}}">{{result.name}}</a>
         </div>
-        <div class="card-body bg-dark text-white">
+        <div class="card-body">
           <p class="c-description">{{result.description|truncate(150)}}</p>
         </div>
         <div class="card-footer bg-dark text-white">
@@ -19,14 +19,14 @@
   {% for art in art_result %}
     <div class="col-md-4 mt-3">
       <div class="card">
-        <div class="card-header text-center bg-dark text-white">
+        <div class="card-header text-center ">
           <a id="read" class="header" href="{{art.url}}">{{art.author}}</a>
         </div>
-        <div class="card-body bg-dark text-white">
+        <div class="card-body">
           <img class="image-responsive w-100" src="{{art.urlToImage}}" alt="">
           <p class="c-description">{{art.description}}</p>
         </div>
-        <div class="card-footer bg-dark text-white">
+        <div class="card-footer bg-success">
           <h6>{{art.publishedAt}}</h6>
         </div>
       </div>
