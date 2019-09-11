@@ -75,7 +75,7 @@ def process_article(article_list):
             description = article.get('description')
             url = article.get('url')
             urlToImage = article.get('urlToImage')
-            publishedAt = article.get('piblishedAt')
+            publishedAt = article.get('publishedAt')
             content = article.get('content')
             if urlToImage:
                 article_result = Articles(id, author,title, description,url,urlToImage,publishedAt,content)
