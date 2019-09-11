@@ -1,0 +1,35 @@
+{% macro News(news_results) %}
+  {% for result in news_results %}
+    <div class="col-md-4 mt-3">
+      <div class="card">
+        <div class="card-header text-center bg-dark text-white">
+          <a id="read" class="header" href="/news/{{result.id}}">{{result.name}}</a>
+        </div>
+        <div class="card-body bg-dark text-white">
+          <p class="c-description">{{result.description|truncate(150)}}</p>
+        </div>
+        <div class="card-footer bg-dark text-white">
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+{%  macro Article(art_result) %}
+  {% for art in art_result %}
+    <div class="col-md-4 mt-3">
+      <div class="card">
+        <div class="card-header text-center bg-dark text-white">
+          <a id="read" class="header" href="{{art.url}}">{{art.author}}</a>
+        </div>
+        <div class="card-body bg-dark text-white">
+          <img class="image-responsive w-100" src="{{art.urlToImage}}" alt="">
+          <p class="c-description">{{art.description}}</p>
+        </div>
+        <div class="card-footer bg-dark text-white">
+          <h6>{{art.publishedAt}}</h6>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
