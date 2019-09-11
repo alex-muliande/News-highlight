@@ -50,6 +50,17 @@
 } */
 
 #alex{
-    background-color:aqua; 
+    background-color:rgb(14, 15, 15); 
 
+}
+#route{
+    font-size: 50px;
+    color: whitesmoke;
+}
+.others{
+    font-size: 20px;
+    display: inline;
+}
+ul li{
+    display:inline-block;
 }
