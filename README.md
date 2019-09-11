@@ -1,4 +1,4 @@
-# News-highlight
+# News
 The project was done using python3.6
 
 ## Description
@@ -7,11 +7,12 @@ An application that helps users to list and preview news articles from various s
 
 ## Author
 Alex Muliande.
+
 ## Behaviour Driven Development BDD 
 ### Functions of the Webapplication
-1.The application allows a user to click on the links provided on the page.
+1.The application allows a user to read through the different News highlights provided on the page.
 
-2.A user can be able to acess more information on clicking the link below the image.
+2.A user can be able to acess articles on clicking the link above the image.
 
 
 
@@ -22,7 +23,7 @@ Alex Muliande.
 
 3.cd into the project.
 
-4.Run pythone3.6 run.py to launch the program.
+4.Run pythone3.6 manage.py to launch the program.
 
 ## Technologies used
 * Python
